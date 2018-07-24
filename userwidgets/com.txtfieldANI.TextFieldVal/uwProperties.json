@@ -1,0 +1,615 @@
+{
+    "classname": "TextFieldVal",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "paramList": [],
+                    "propertyKey": "onValidationSuccess",
+                    "pw": {
+                        "displayName": "onValidationSuccess",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ca153c18b9964a65821f6d4175d6990e",
+                    "type": "event"
+                },
+                {
+                    "paramList": [],
+                    "propertyKey": "onVlidationFailuer",
+                    "pw": {
+                        "displayName": "onVlidationFailuer",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ca153c18b9964a65821f6d4175d6990e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "onDone",
+                    "propertyKey": "onDone",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onDone",
+                        "srcWidget": "txtFiledName",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "a9a7768f2cf74be58286407eb84ebc1b"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "onEndEditing",
+                    "propertyKey": "onEndEditing",
+                    "pw": {
+                        "access": "readwrite",
+                        "applicablePSPplatform": "iphone",
+                        "category": "action",
+                        "displayName": "onEndEditing",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "spa"
+                            ]
+                        },
+                        "srcWidget": "txtFiledName",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "a9a7768f2cf74be58286407eb84ebc1b"
+                }
+            ]
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "3",
+                    "originalPropertyKey": "minCharLen",
+                    "propertyKey": "minCharLen",
+                    "pw": {
+                        "displayName": "mincharLen",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ca153c18b9964a65821f6d4175d6990e",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "isVisible",
+                    "propertyKey": "visiblelblName",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "VisiblelblName",
+                        "srcWidget": "lblName",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ff178192c0204826803dc2deab90c7f8"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "text",
+                    "propertyKey": "text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Text",
+                        "srcWidget": "txtFiledName",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "a9a7768f2cf74be58286407eb84ebc1b"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "maxTextLength",
+                    "propertyKey": "maxTextLength",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "Max Characters",
+                        "srcWidget": "txtFiledName",
+                        "type": "integer",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "a9a7768f2cf74be58286407eb84ebc1b"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "isVisible",
+                    "propertyKey": "visiblelblNameErr",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "visiblelblNameErr",
+                        "srcWidget": "lblFullNameErr",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bc293140dc94423c91a787deaee78b22"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "text",
+                    "propertyKey": "textErr",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "lblErrText",
+                        "srcWidget": "lblFullNameErr",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bc293140dc94423c91a787deaee78b22"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "placeholder",
+                    "propertyKey": "placeholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "Placeholder",
+                        "srcWidget": "txtFiledName",
+                        "supportedPlatforms": {
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "a9a7768f2cf74be58286407eb84ebc1b"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "text",
+                    "propertyKey": "textlblName",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "textlblName",
+                        "srcWidget": "lblName",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ff178192c0204826803dc2deab90c7f8"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "textInputMode",
+                    "propertyKey": "textInputMode",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "Input Mode",
+                        "srcWidget": "txtFiledName",
+                        "type": "enum",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Any",
+                                        "A"
+                                    ],
+                                    [
+                                        "Numeric Only",
+                                        "N"
+                                    ]
+                                ]
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "a9a7768f2cf74be58286407eb84ebc1b"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "keyBoardStyle",
+                    "propertyKey": "keyBoardStyle",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "defaultValue": "default",
+                        "displayName": "Keyboard Style",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb",
+                                "kiosk"
+                            ],
+                            "mobile": [
+                                "android"
+                            ],
+                            "tablet": [
+                                "android"
+                            ]
+                        },
+                        "srcWidget": "txtFiledName",
+                        "type": "enum",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Forked-Combobox",
+                                "dataUpdaterId": "Forked-Combobox",
+                                "popupId": "Forked-Combobox",
+                                "type": "ForkComboboxBtn"
+                            },
+                            "Button6Group": {},
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Combobox-Button",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "a9a7768f2cf74be58286407eb84ebc1b"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "contentAlignment",
+                    "propertyKey": "contentAlignmentLbl",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Content Alignlbl",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "kiosk",
+                                "desktopweb"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "srcWidget": "lblName",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Forked-Combobox",
+                                "dataUpdaterId": "Forked-Combobox",
+                                "popupId": "Forked-Combobox",
+                                "type": "ForkComboboxBtn"
+                            },
+                            "Button6Group": {},
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-6ButtonGroup-Button",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ff178192c0204826803dc2deab90c7f8"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "contentAlignment",
+                    "propertyKey": "contentAlignment1Txt",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Content Aligntxt",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "kiosk",
+                                "desktopweb"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "srcWidget": "txtFiledName",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Forked-Combobox",
+                                "dataUpdaterId": "Forked-Combobox",
+                                "popupId": "Forked-Combobox",
+                                "type": "ForkComboboxBtn"
+                            },
+                            "Button6Group": {},
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-6ButtonGroup-Button",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "a9a7768f2cf74be58286407eb84ebc1b"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "contentAlignment",
+                    "propertyKey": "contentAlignment2Err",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Content AlignErr",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "kiosk",
+                                "desktopweb"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "srcWidget": "lblFullNameErr",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Forked-Combobox",
+                                "dataUpdaterId": "Forked-Combobox",
+                                "popupId": "Forked-Combobox",
+                                "type": "ForkComboboxBtn"
+                            },
+                            "Button6Group": {},
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-6ButtonGroup-Button",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bc293140dc94423c91a787deaee78b22"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "keyboardActionLabel",
+                    "propertyKey": "keyboardActionLabel",
+                    "pw": {
+                        "access": "readwrite",
+                        "applicablePSPplatform": "iphone",
+                        "category": "widget",
+                        "displayName": "Keyboard Action Label",
+                        "pspPlatform": {
+                            "desktop": [],
+                            "mobile": [
+                                "iphone",
+                                "android"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android"
+                            ]
+                        },
+                        "srcWidget": "txtFiledName",
+                        "type": "enum",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": {
+                                    "mobile": {
+                                        "android": [
+                                            [
+                                                "Done",
+                                                1
+                                            ],
+                                            [
+                                                "Go",
+                                                2
+                                            ],
+                                            [
+                                                "Search",
+                                                3
+                                            ],
+                                            [
+                                                "Next",
+                                                4
+                                            ],
+                                            [
+                                                "Send",
+                                                5
+                                            ],
+                                            [
+                                                "Previous",
+                                                11
+                                            ],
+                                            [
+                                                "Default",
+                                                12
+                                            ]
+                                        ],
+                                        "iphone": [
+                                            [
+                                                "Done",
+                                                1
+                                            ],
+                                            [
+                                                "Go",
+                                                2
+                                            ],
+                                            [
+                                                "Search",
+                                                3
+                                            ],
+                                            [
+                                                "Next",
+                                                4
+                                            ],
+                                            [
+                                                "Send",
+                                                5
+                                            ],
+                                            [
+                                                "Google",
+                                                6
+                                            ],
+                                            [
+                                                "Join",
+                                                7
+                                            ],
+                                            [
+                                                "Route",
+                                                8
+                                            ],
+                                            [
+                                                "Yahoo",
+                                                9
+                                            ],
+                                            [
+                                                "Call",
+                                                10
+                                            ]
+                                        ]
+                                    },
+                                    "tablet": {
+                                        "android": [
+                                            [
+                                                "Done",
+                                                1
+                                            ],
+                                            [
+                                                "Go",
+                                                2
+                                            ],
+                                            [
+                                                "Search",
+                                                3
+                                            ],
+                                            [
+                                                "Next",
+                                                4
+                                            ],
+                                            [
+                                                "Send",
+                                                5
+                                            ],
+                                            [
+                                                "Previous",
+                                                11
+                                            ],
+                                            [
+                                                "Default",
+                                                12
+                                            ]
+                                        ],
+                                        "ipad": [
+                                            [
+                                                "Done",
+                                                1
+                                            ],
+                                            [
+                                                "Go",
+                                                2
+                                            ],
+                                            [
+                                                "Search",
+                                                3
+                                            ],
+                                            [
+                                                "Next",
+                                                4
+                                            ],
+                                            [
+                                                "Send",
+                                                5
+                                            ],
+                                            [
+                                                "Google",
+                                                6
+                                            ],
+                                            [
+                                                "Join",
+                                                7
+                                            ],
+                                            [
+                                                "Route",
+                                                8
+                                            ],
+                                            [
+                                                "Yahoo",
+                                                9
+                                            ],
+                                            [
+                                                "Call",
+                                                10
+                                            ]
+                                        ]
+                                    }
+                                }
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Combobox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "a9a7768f2cf74be58286407eb84ebc1b"
+                },
+                {
+                    "access": "Enable",
+                    "originalPropertyKey": "isVisible",
+                    "propertyKey": "visibleofTxtFiled",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "visibleofTxtFiled",
+                        "srcWidget": "txtFiledName",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "a9a7768f2cf74be58286407eb84ebc1b"
+                }
+            ]
+        }
+    },
+    "namespace": "com.txtfieldANI",
+    "version": "1.0.0"
+}
